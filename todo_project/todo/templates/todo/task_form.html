@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">
+    {% crf_token %}
+<!--    use the fields from taskform-->
+    {{form.as_p}}
+    <button type="submit">Save</button>
+</form>
+
+<a href="{% url '' %}">Back to task list</a>
+</body>
+</html>
